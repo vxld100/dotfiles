@@ -10,14 +10,6 @@ super + ^
 super + Return
     alacritty
 
-# Floating Alacritty Terminal
-super + shift + Return
-    alacritty -f
-
-# Fullscreen Alacritty Terminal
-super + shift + t
-    alacritty -m
-
 # j4 dmenu
 super + s
     ~/.config/rofi/launchers/text/launcher.sh
@@ -32,7 +24,7 @@ super + e
 
 # Lock Screen
 ctrl + alt + l
-    lock
+    betterlockscreen -l
 
 # Launch Applications
 super + {w,r}
