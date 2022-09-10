@@ -1,5 +1,6 @@
 alias la='ls -A'
-alias mountp='rclone mount pCloudBackup: /home/erebos/pcloud --vfs-cache-mode writes --damon'
+alias mountp='rclone mount pCloudBackup: /home/erebos/pcloud --vfs-cache-mode writes --daemon'
+alias umountp='fusermount -u ~/pcloud'
 alias wallpaper='feh --no-fehbg --bg-scale $1'
 alias books='ranger ~/Documents/books'
 
@@ -24,7 +25,6 @@ export VDPAU_DRIVER
 HISTFILE=$HOME/.sh_history
 export HISTFILE
 
-PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/usr:/sbin:/bin
+PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/usr:/sbin:/bin:~/.emacs.d/bin
 
 set -o viraw
-

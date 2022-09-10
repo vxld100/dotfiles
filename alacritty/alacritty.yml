@@ -48,3 +48,7 @@ cursor:
 
 ## Live config reload
 live_config_reload: true
+
+## Key bindings
+key_bindings:
+  - { key: N, mods: Super, mode: ~Search,   action: ToggleViMode    }

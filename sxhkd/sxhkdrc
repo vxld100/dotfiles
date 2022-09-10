@@ -4,7 +4,7 @@
 
 # reloads sxhkd configuration
 super + ^
-    pkill -USR1 -x sxhkd
+    {sh -c "pkill -HUP -x sxhkd; sxhkd &}
 
 # Launch Terminal
 super + Return
@@ -27,8 +27,8 @@ ctrl + alt + l
     betterlockscreen -l
 
 # Launch Applications
-super + {w,r}
-    {firefox,alacritty --hold -e ranger}
+super + {w,r,i}
+    {firefox,alacritty --hold -e ranger,emacs}
 
 # Volume controls
 XF86Audio{RaiseVolume,LowerVolume,Mute}
@@ -65,7 +65,7 @@ ctrl + shift + {q,r}
 
 # close and kill
 super + c
-    bspc node -c
+    xdotool keyup win && bspc node -c
 
 # alternate between the tiled and monocle layout
 super + space
@@ -84,8 +84,12 @@ super + g
 #
 
 # set the window state
-super + {t,ctrl + t,f}
-	bspc node -t {tiled,pseudo_tiled,fullscreen}
+super + {t,ctrl + t}
+	bspc node -t {tiled,pseudo_tiled}
+
+# toggle between full screen and tiled
+super + f
+	bspc node -t "~"{fullscreen,tiled}
 
 # set the node flags
 super + ctrl + {m,x,y,z}
