@@ -41,6 +41,9 @@ window.opacity: 1.0
 ## Cursor
 cursor:
   style:
+    shape: Underline
+    blinking: On
+  vi_mode_style:
     shape: Block
     blinking: On
 
