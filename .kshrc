@@ -1,8 +1,11 @@
 alias la='ls -A'
-alias mountp='rclone mount pCloudBackup: /home/erebos/pcloud --vfs-cache-mode writes --daemon'
+alias ls='ls -p'
+alias mountp='rclone mount russia: /home/erebos/pcloud --vfs-cache-mode writes --daemon'
 alias umountp='fusermount -u ~/pcloud'
 alias wallpaper='feh --no-fehbg --bg-scale $1'
 alias books='ranger ~/Documents/books'
+alias watchcpu='watch -n 0.5 cat /sys/devices/system/cpu/cpu[0-9]*/cpufreq/scaling_cur_freq'
+alias watchwifi='watch -n 0.5 nmcli device wifi list'
 
 LIGHTRED="\033[38;2;179;180;176m"
 WHITE="\033[0m"

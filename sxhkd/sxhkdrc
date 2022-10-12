@@ -16,7 +16,7 @@ super + s
 
 # books
 super + e
-    {alacritty --hold -e ranger /home/erebos/Documents/books/}
+    {alacritty --hold -e ranger /home/erebos/Documents/}
 
 # Launch Menus
 #super + {x,n,d,s}

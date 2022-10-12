@@ -54,4 +54,4 @@ live_config_reload: true
 
 ## Key bindings
 key_bindings:
-  - { key: N, mods: Super, mode: ~Search,   action: ToggleViMode    }
+  - { key: N, mods: Control, mode: ~Search,   action: ToggleViMode    }

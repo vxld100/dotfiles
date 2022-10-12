@@ -4,8 +4,8 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 
-~/.config/bspwm/borderbspwm &
-
+#~/.config/bspwm/borderbspwm 
+bspc config border_width	2
 bspc config window_gap          12
 
 bspc config split_ratio          0.5
@@ -13,8 +13,17 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
 bspc rule -a firefox desktop='^2' follow=on focus=on state=tiled
-bspc rule -a Zathura desktop='^3' follow=on focus=on state=tiled
+bspc rule -a sioyek desktop='^3' follow=on focus=on state=tiled
 bspc rule -a Emacs desktop='^4' follow=on focus=on state=tiled
+
+## Applications to be started and additional configurations
+
+pulseaudio -k
+picom -b --shadow --animations --animation-window-mass 0.5 --animation-for-open-window zoom --animation-stiffness 350 --backend glx --glx-no-rebind-pixmap --glx-no-stencil --vsync &
+
+xinput --disable 13
+xsetroot -cursor_name left_ptr
+xset r rate 200 50
 
 feh --no-fehbg --bg-scale "/home/erebos/Pictures/Skull.jpg" &
 

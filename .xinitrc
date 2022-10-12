@@ -54,5 +54,4 @@ xinput --disable 13
 xsetroot -cursor_name left_ptr
 xset r rate 200 50
 
-#xbindkeys &
 exec bspwm
