@@ -6,6 +6,8 @@ alias wallpaper='feh --no-fehbg --bg-scale $1'
 alias books='ranger ~/Documents/books'
 alias watchcpu='watch -n 0.5 cat /sys/devices/system/cpu/cpu[0-9]*/cpufreq/scaling_cur_freq'
 alias watchwifi='watch -n 0.5 nmcli device wifi list'
+alias bidoc='rclone bisync ~/Documents russia:/Documents --verbose'
+alias binotes='rclone bisync ~/Notes russia:/Notes --verbose'
 
 LIGHTRED="\033[38;2;179;180;176m"
 WHITE="\033[0m"
