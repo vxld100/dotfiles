@@ -1,0 +1,20 @@
+#! /usr/bin/zsh
+
+
+if bluetoothctl show | grep -q "Powered: no"; then
+   bluetoothctl power on;
+   sleep 1;
+fi
+
+
+if [[ $(bluetoothctl devices Connected) != "" ]]; then
+	for device in $(bluetoothctl devices Connected | cut -d ' ' -f 2); do
+		bluetoothctl disconnect $device;
+		bluetoothctl power off;
+   done
+else
+   for device in $(bluetoothctl devices Paired | cut -d ' ' -f 2); do
+		bluetoothctl connect $device;
+   done
+fi
+

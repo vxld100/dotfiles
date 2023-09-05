@@ -1,0 +1,12 @@
+#! /usr/bin/sh
+
+
+bspc subscribe all | while read line; do 
+	if [ $(bspc query -N -d $desk -n .leaf | wc -l) = 1 ]; then
+		if [ $(bspc config border_width) !=  0 ]; then
+			bspc config border_width 0;
+		fi
+	elif [ $(bspc config border_width) != 2 ]; then
+			bspc config border_width 2;
+	fi
+done

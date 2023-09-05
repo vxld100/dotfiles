@@ -1,0 +1,5 @@
+#! /usr/bin/sh
+
+sleep 0.5
+xdotool key F11
+bspc node -t tiled
