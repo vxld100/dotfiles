@@ -141,9 +141,9 @@ config.set('content.javascript.enabled', True, 'qute://*/*')
 # My configs
 config.set("colors.webpage.darkmode.enabled", True)
 config.set("tabs.show", "multiple")
-config.set("statusbar.show", "never")
-config.set("zoom.default", "200%")
+#config.set("statusbar.show", "never")
+config.set("zoom.default", "150%")
 
 # For cardcreation
-config.set("url.start_pages", "http://localhost:8501")
-c.bindings.default = {}
+#config.set("url.start_pages", "http://localhost:8501")
+#c.bindings.default = {}
