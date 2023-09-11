@@ -90,5 +90,3 @@ ZSH_HIGHLIGHT_STYLES[precommand]='fg=magenta,bold'
 ZSH_HIGHLIGHT_STYLES[function]='fg=magenta'
 ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=red'
 
-
-if [ -e /home/lilin/.nix-profile/etc/profile.d/nix.sh ]; then . /home/lilin/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
