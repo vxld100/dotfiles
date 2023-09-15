@@ -11,7 +11,7 @@ success_symbol = '[❯](white)'
 vimcmd_symbol = '[❮](white)'
 
 [custom.root]
-command = 'echo 󰣙'
+command = 'echo \#'
 when = 'sudo -n true > /dev/null 2>&1;'
 style = 'bold red'
 
