@@ -13,7 +13,9 @@ alias vim='nvim $1'
 alias backup='~/scripts/backup.sh'
 alias sync='~/scripts/sync.sh && sudo chown -R lilin:lilin ~/Uni'
 alias poweroff='sudo poweroff'
+alias reboot='sudo reboot'
 alias rg='ranger'
+alias embed='~/scripts/embedding.sh'
 
 wallpaper () {
 	setopt localoptions rmstarsilent;

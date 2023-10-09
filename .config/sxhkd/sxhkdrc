@@ -24,7 +24,7 @@ ctrl + alt + l
 
 # Launch Applications
 super + {w,r}
-    {sh -c "flatpak --filesystem=home run com.microsoft.Edge",alacritty -e vim -c VimwikiIndex}
+    {sh -c "flatpak --filesystem=home run com.microsoft.Edge",alacritty --hold -e ranger ~/Uni}
 
 # Volume controls
 XF86Audio{RaiseVolume,LowerVolume,Mute}
@@ -42,8 +42,8 @@ XF86MonBrightness{Up,Down}
     {sh -c "brillo -A 10",sh -c "brillo -U 10"}
 
 # screenshot
-super + {y, shift + x}
-    {scrot -s - | xclip -selection clipboard -t image/png,}
+super + {y, shift + y}
+    {gscreenshot -sc,}
 
 # screenshot active window
 ctrl + Print
