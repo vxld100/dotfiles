@@ -32,5 +32,8 @@ require("lazy").setup({
 	"L3MON4D3/LuaSnip";
 	"saadparwaiz1/cmp_luasnip";
 	"rafamadriz/friendly-snippets";
+	"evesdropper/luasnip-latex-snippets.nvim";
+	"lervag/vimtex";
+	"rhysd/vim-grammarous";
 })
 

@@ -10,7 +10,7 @@ vim.o.wrap = false
 vim.o.hlsearch = false
 vim.o.incsearch = true
 
-vim.o.scroloff = 8
+-- vim.o.scroloff = 8
 
 -- Cursors
 vim.o.guicursor = "i-c-ci:ver25-Cursor/lCursor"
@@ -27,4 +27,9 @@ vim.cmd([[
 
 -- For files without extentions, set textwidth to half a terminal width, with line numbers turned off
 -- vim.cmd([[autocmd BufRead,BufNewFile * if expand('%:e') == '' | setlocal nonumber norelativenumber textwidth=75 | endif]])
+
+-- Auto-compile LaTeX on save (silent)
+vim.api.nvim_exec([[
+    autocmd BufWritePost *.tex silent !xelatex "%"
+]], false)
 

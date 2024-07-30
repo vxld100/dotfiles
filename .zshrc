@@ -55,7 +55,7 @@ bindkey "^?" backward-delete-char
 
 
 # Loading of Starship prompt
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
 
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
@@ -82,6 +82,9 @@ zinit light-mode for \
 # Plugins
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
+
+# prompt
+zinit ice depth=1; zinit light romkatv/powerlevel10k
 
 # Syntax highlighting theming
 typeset -A ZSH_HIGHLIGHT_STYLES

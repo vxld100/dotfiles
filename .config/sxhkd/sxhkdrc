@@ -24,7 +24,8 @@ ctrl + alt + l
 
 # Launch Applications
 super + {w,r}
-    {sh -c "flatpak --filesystem=home run com.microsoft.Edge",alacritty --hold -e ranger ~/Uni}
+    {sh -c "vivaldi-stable",alacritty --hold -e ranger ~/Uni}
+#    {sh -c "flatpak --filesystem=home run com.microsoft.Edge",alacritty --hold -e ranger ~/Uni}
 
 # Volume controls
 XF86Audio{RaiseVolume,LowerVolume,Mute}
@@ -43,7 +44,7 @@ XF86MonBrightness{Up,Down}
 
 # screenshot
 super + {y, shift + y}
-    {gscreenshot -sc,}
+    {sleep 0.2 && scrot -s -f -e 'xclip -selection clipboard -t image/png -i $f ; rm $f',}
 
 # screenshot active window
 ctrl + Print

@@ -16,6 +16,7 @@ bspc config gapless_monocle      true
 
 bspc rule -a Microsoft-edge desktop='^2' follow=on focus=on state=tiled
 bspc rule -a sioyek desktop='^3' follow=on focus=on state=tiled
+bspc rule -a Zathura desktop='^3' follow=on focus=on state=tiled
 
 
 ## Start programs and set last configs
@@ -26,7 +27,7 @@ bluetoothctl power off
 picom --vsync --backend glx --glx-no-stencil --glx-no-rebind-pixmap &
 
 xsetroot -cursor_name left_ptr
-xset r rate 200 50
+xset r rate 200 70
 
 feh --no-fehbg --bg-fill /home/lilin/Pictures/wallpaper/*
 
